@@ -1,10 +1,16 @@
 {
 	"author": "Voltaism",
-	"version": "1.0",
+	"version": "1.1",
+        "onset_build": "1.0.3",
         "client_scripts": [
                 "client/cl_flood.lua"
         ],
         "server_scripts": [
                 "server/sv_flood.lua"
-        ]
+        ],
+        "auto_updater": {
+           "package.json": "https://raw.githubusercontent.com/vugi99/onset-flood-gamemode/master/package.json",
+           "server/sv_flood.lua": "https://raw.githubusercontent.com/vugi99/onset-flood-gamemode/master/server/sv_flood.lua",
+           "client/cl_flood.lua": "https://raw.githubusercontent.com/vugi99/onset-flood-gamemode/master/client/cl_flood.lua"
+        }
 }
